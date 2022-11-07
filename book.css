@@ -1,0 +1,33 @@
+/* SECTION 2 */
+
+#section2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  height: 80vh;
+  margin-top: 100px;
+  color: #935A49;
+}
+
+#section2-left {
+  width: 45%;
+  height: 100%;
+  background-color: #EFE8E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+
+#about-left {
+  position: absolute;
+  width: 80%;
+  top: 100px;
+}
+#section2-right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
