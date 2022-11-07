@@ -1,0 +1,180 @@
+#section1 {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#home-banner {
+  width: 120vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.banner-header {
+  font-family: Lora;
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  position: absolute;
+  z-index: 5;
+}
+
+#homeheader1 {
+  left: 10%;
+  top: 40vh;
+}
+
+#homeheader2 {
+  left: 15%;
+  top: 50vh;
+}
+
+#homeheader3 {
+  left: 9%;
+  top: 60vh;
+}
+
+#section2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+#section2-left {
+  width: 45%;
+  height: 550px;
+  background-image: url("images/clinic.png"); /* fallback */
+  background-size: cover;
+  transition: ease-in-out all 0.8s;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+}
+
+#section2-left:hover {
+  background-image: url("images/clinic.png"); /* fallback */
+  background-image:
+  linear-gradient(to bottom, rgba(216, 199, 179, 0) 0%, #D8C7B3 100%),
+    url('images/clinic.png');
+  transition: ease-in-out all 0.8s;
+
+}
+
+#section2-left-text {
+  /* visibility: hidden; */
+  color: #5C3428;
+
+}
+#section2-left-text > h2 {
+  font-family: Lora;
+}
+#section2-left:hover + #section2-left-text {
+  /* visibility: visible; */
+}
+
+#section2-right {
+  width: 45%;
+  height: 550px;
+  background-color: #EFE8E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: #935A49;
+}
+
+.input-text {
+  background-color: white;
+}
+
+#section3 {
+  width: 100%;
+  background-color: #D8C7B3;
+  padding: 80px;
+  text-align: right;
+}
+
+#section3-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec3-box {
+  height: 60vh;
+  width: 30%;
+
+  background-color: #EFE8E1;
+}
+
+#section4 {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding: 80px 120px;
+}
+
+#section4 > img {
+  width: 40%;
+  object-fit: cover;
+}
+
+#section4-right {
+  width: 60%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+.testimonial-box {
+  background-color: #EFE8E1;
+  height: 250px;
+  width: 600px;
+  position: absolute;
+  padding: 50px;
+}
+
+#tbox1 {
+  top: 50px;
+}
+
+#tbox2 {
+  top: 380px;
+  right: 300px;
+}
+
+#tbox3 {
+  top: 690px;
+  right: 100px;
+}
+
+#section5 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#section5-up {
+  margin: auto;
+  width: 90%;
+  height: 40%;
+  background: #D8C7B3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#section5-down {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+}
