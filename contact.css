@@ -18,7 +18,7 @@
 
 .banner-header {
   font-family: Lora;
-  color: #D8C7B3;
+  color: white;
   font-size: 60px;
   font-weight: 400;
   position: absolute;
@@ -35,7 +35,7 @@
 #section2 {
   display: flex;
   justify-content: space-between;
-  padding: 80px;
+  padding: 10vh 10vw;
   height: 80vh;
   margin-bottom: 40px;
   color: #935A49;
@@ -60,5 +60,45 @@
 #section2-right {
   width: 45%;
   display: flex;
+  align-items: flex-end;
+}
+
+
+
+
+.input-text, .input-text:focus {
+  border: none;
+  padding-left: 10px;
+}
+
+#input-email {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+#input-query {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+.form-button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin-left: 50px;
+  background-color: white;
+  color: #935A49;
+}
+.form-button:hover {
+  background-color: #935A49;
+  color: #EFE8E1;
+}
+
+#book-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
 }

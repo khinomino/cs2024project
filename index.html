@@ -57,18 +57,21 @@
           <p>
             Rooted in the belief that the most beautiful version of ourselves is already within us, work with our team of professionals to uncover how you can let your beauty shine. 
           </p>
-          <a>Read About Us -></a>
+          <a href="about.html">Read About Us -></a>
         </div>
       </div>
       <div id="section2-right">
-        <h2>
-          Get 10% Discount on Your Treatments
-        </h2>
-        <p>when you join as our xxx member</p>
-        <label>Email</label>
-        <input class="input-text">
-        <button>Sign Up</button>
-        <p>The signup confirmation will be sent to your email</p>
+        <div id="discount-wrapper">
+          <h2>
+            Get 10% Discount on Your Treatments
+          </h2>
+          <p>when you join as our Eterel member</p>
+          <label>Email</label>
+          <input class="input-text" id="member-email" type="email"> <br>
+          <button id="member-send">Send</button>
+         
+          <p id="signupconfirm">The signup confirmation will be sent to your email</p>
+        </div>
       </div>
     </div>
 
@@ -96,21 +99,25 @@
       <img src="images/Tessera.png"/>
       <div id="section4-right">
         <div class="testimonial-box" id="tbox1">
-          <p>
-            Loved how open-minded Dr Sim was to all my requests, and curated a plan that was perfect for me. 
+          <p class="testimonial-text">
+            Loved how open-minded Dr Sim was to all my requests, and curated <strong>a plan that was perfect</strong> for me. 
           </p>
+          <p class="testimonial-name">- Kiara, 28</p>
         </div>
         <div class="testimonial-box" id="tbox2">
-          <p>
-            It was my first time doing procedures of this nature, so I was quite nervous going into it. But I had nothing to worry about because everyone was so warm and welcoming!
+          <p class="testimonial-text">
+            It was my first time doing procedures of this nature, so I was quite nervous going into it. 
+            But I had nothing to worry about because everyone was so <strong>warm and welcoming</strong>!
           </p>
+          <p class="testimonial-name">- Sasha, 32</p>
         </div>
         <div class="testimonial-box" id="tbox3">
-          <p>
-            BLISS products are my holy grail! Can't imagine living without them 
+          <p class="testimonial-text">
+            <i><strong>BLISS</strong></i> products are my <strong>holy grail</strong>! Can't imagine living without them 
           </p>
+          <p class="testimonial-name">- Thomas, 24</p>
         </div>
-        <div>*****</div>
+        <h3>★★★★★</h3>
         <h3>5.0 from Google Reviews</h3>
       </div>
     </div>
@@ -118,15 +125,17 @@
     <!-- TALK TO US -->
     <div id="section5">
       <div id="section5-up">
-        <h1>Talk to Us</h1>
-        <p>Consult for free</p>
-        <form>
-          <label>Email</label> <br>
-          <input class="input-text"> <br>
-          <label>Queries</label> <br>
-          <input class="input-text"> <br>
-          <button>Sign Up</button>
-        </form>
+        <div id="talk-form">
+          <h1>Talk to Us</h1>
+          <p>Consult for free</p>
+          <label>Email</label>
+          <input class="input-text" id="input-email" type="email"> <br>
+          <label>Queries</label>
+          <textarea class="input-text" id="input-query"></textarea> <br>
+          <div id="book-button">
+            <button class="form-button">Send</button>
+          </div>
+        </div>
       </div>
       <img src="images/room.jpeg" id="section5-down"/>
     </div>
