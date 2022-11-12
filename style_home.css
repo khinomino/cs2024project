@@ -1,3 +1,5 @@
+
+/* SECTION 1 */
 #section1 {
   width: 100vw;
   height: 100vh;
@@ -14,7 +16,6 @@
 .banner-header {
   font-family: Lora;
   color: white;
-  font-size: 60px;
   font-weight: 400;
   position: absolute;
   z-index: 5;
@@ -35,16 +36,20 @@
   top: 60vh;
 }
 
+
 /* SECTION 2 */
 #section2 {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
 }
 
 #section2-left {
   width: 45%;
+  min-width: 400px;
+  margin: auto;
   height: 550px;
   background-image: url("images/clinic.png"); /* fallback */
   background-size: cover;
@@ -55,7 +60,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 #section2-left:hover {
@@ -89,9 +94,10 @@
 
 #section2-right {
   width: 45%;
+  min-width: 400px;
   height: 550px;
   background-color: #EFE8E1;
-  color: #935A49;
+  padding: 40px;
 }
 #discount-wrapper {
   display: flex;
@@ -99,7 +105,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 450px;
+  width: 100%;
   height: 100%;
   margin: auto;
 }
@@ -146,19 +152,20 @@
   width: 30%;
 
   background-color: #EFE8E1;
-  position: relative;
-}
-.treatment-title {
-  position: absolute;
-  top: 50%;
-  left: 45%;
+  background-size: cover;
   color: white;
 }
-.treat-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+#treat1 {
+  background-image: url('images/skin.png');
 }
+#treat2 {
+  background-image: url('images/body.png');
+}
+#treat3 {
+  background-image: url('images/hair.png');
+}
+
 
 /* SECTION 4 */
 #section4 {
@@ -184,10 +191,11 @@
 }
 .testimonial-box {
   background-color: #EFE8E1;
-  height: 250px;
-  width: 600px;
+  min-height: 250px;
+  width: 60vw;
+  max-width: 600px;
   position: absolute;
-  padding: 50px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -210,12 +218,12 @@
 
 #tbox2 {
   top: 380px;
-  right: 300px;
+  right: 30%;
 }
 
 #tbox3 {
   top: 690px;
-  right: 100px;
+  right: 10%;
 }
 
 #section5 {
@@ -292,4 +300,127 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media only screen and (max-width: 600px) {
+
+  /* SECTION 1 */
+  #section1 {
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #home-banner {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+  }
+
+  .banner-header {
+    font-family: Lora;
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    z-index: 5;
+  }
+
+  #homeheader1 {
+    left: 20%;
+    top: 48vh;
+  }
+
+  #homeheader2 {
+    left: 25%;
+    top: 54vh;
+  }
+
+  #homeheader3 {
+    left: 20%;
+    top: 60vh;
+  }
+  #section2 {
+    padding: 0;
+  }
+  #section2-left{
+    background-image:
+    linear-gradient(to bottom, rgba(216, 199, 179, 0) 0%, #D8C7B3 100%),
+      url('images/clinic.png');
+    justify-content: flex-end;
+    width: auto;
+  }
+  #section2-right {
+    width: auto;
+  }
+  #section2-left #section2-left-text {
+    display: block;
+  }
+
+  #section3 {
+    padding: 40px;
+  }
+  #section3-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  .sec3-box {
+    height: 20vh;
+    width: 100%;
+  
+    background-color: #EFE8E1;
+    position: relative;
+    margin: 10px 0;
+  }
+
+  /* SECTION 4 */
+#section4 {
+  margin: auto;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+#section4 > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#section4-right {
+  width: 100%;
+  height: max-content;
+  padding: 40px 0;
+  min-width: 300px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.testimonial-box {
+  background-color: #EFE8E1;
+  height: 250px;
+  width: 90vw;
+  margin: 10px 0;
+  position:inherit;
+  padding: 30px;
+}
+
+#tbox1 {
+  top: auto;
+}
+
+#tbox2 {
+  top: auto;
+  right: auto;
+}
+
+#tbox3 {
+  top: auto;
+  right: auto;
+}
+
+#talk-form {
+  width: auto;
+}
 }
