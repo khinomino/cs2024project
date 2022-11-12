@@ -339,14 +339,10 @@ hr {
   padding: 40px 0px;
   flex-wrap: wrap;
 }
-.left-column {
-  min-width: 400px;
+.left-column, .right-column  {
+  min-width: 300px;
 
 }
-.right-column {
-  min-width: 400px;
-}
-
 
 .brown-bg {
   background-color: #D8C7B3;
