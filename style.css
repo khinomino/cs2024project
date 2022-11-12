@@ -18,6 +18,17 @@ h1 {
 h2 {
   font-size: 40px;
 }
+
+a {
+  text-decoration: none;
+  color: #935A49;
+}
+
+a:hover {
+  color: #935A49;
+  text-decoration: underline;
+}
+
 /* UPDATED HEADER */
 
 #header{
@@ -356,6 +367,7 @@ hr {
 .mobile-only {
   display: none;
 }
+
 
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */

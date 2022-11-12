@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<!-- Home Page -->
-		<title>Eterel - Our Treatments </title>
+		<title>Eterel - Book Appointment </title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
         </div>
 
          <div id="headermenu4">
-            <a href="blog.html">☯ FROM THE DOCTOR'S DESK</a> 
+            <a href="blog.html">FROM THE DOCTOR'S DESK</a> 
          </div>
 
          <div id="headermenu5">
@@ -62,14 +62,32 @@
       <div id="section2-right">
         <h1>Book Appointment</h1><br>
         <label>Email</label>
-        <input class="input-text" id="input-email" type="email"> <br>
-        <label>Queries</label>
-        <textarea class="input-text" id="input-query"></textarea> <br>
+        <input class="input-text" id="input-email" type="email" name="email" placeholder="example@email.com"> <br>
+        <label>Name</label>
+        <input class="input-text" id="input-name" type="text" name="name" placeholder="Your Name"> <br>
+        <label>Treatment</label>
+        <select class="input-text" id="input-treatment" name="treatment"> 
+          <option value="fountain">Fountain of Youth</option>
+          <option value="tessera">Tessera</option>
+          <option value="vdeluxe">V Deluxe</option>
+          <option value="breeze">Breeze</option>
+        </select>  
+        <br>
+        <label>Date</label>
+        <input class="input-text" id="input-date" type="date"> <br>
+        <label>Time</label>
+        <select class="input-text" id="input-time" name="time"> 
+          <option value="10">10:00 (2hrs)</option>
+          <option value="12">12:00 (2hrs)</option>
+          <option value="14">14:00 (2hrs)</option>
+          <option value="16">16:00 (2hrs)</option>
+        </select>  
+        <br/>
         <div id="book-button">
           <p>
-            Unsure? Check available treatment or contact us
+            Unsure? <a href="treatments.html">Check available treatment</a> or <a href="contact.html">contact us</a>
           </p>
-          <button class="form-button">Send</button>
+          <button class="form-button">Book</button>
         </div>
       </div>
     </div>
@@ -120,6 +138,24 @@
       <div style="clear:both"></div>
     </div>
 
- 
+    <script>
+      var today = new Date();
+      today = new Date(today.setDate(today.getDate() + 1));
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1; //January is 0!
+      var yyyy = today.getFullYear();
+
+      if (dd < 10) {
+        dd = '0' + dd;
+      }
+
+      if (mm < 10) {
+        mm = '0' + mm;
+      } 
+          
+      today = yyyy + '-' + mm + '-' + dd;
+      document.getElementById("input-date").setAttribute("min", today);
+      document.getElementById("input-date").setAttribute("value", today);
+    </script>
 	</body>
 </html>
