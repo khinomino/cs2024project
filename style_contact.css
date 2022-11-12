@@ -34,15 +34,16 @@
 
 #section2 {
   display: flex;
-  justify-content: space-between;
-  padding: 10vh 10vw;
-  height: 80vh;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 80px;
   margin-bottom: 40px;
   color: #935A49;
 }
 
 #section2-left {
-  width: 45%;
+  width: 90vw;
+  max-width: 500px;
   height: 100%;
   background-color: #EFE8E1;
   display: flex;
@@ -58,9 +59,10 @@
   top: 100px;
 }
 #section2-right {
-  width: 45%;
   display: flex;
   align-items: flex-end;
+  margin-left: 40px;
+  margin-top: 40px;
 }
 
 
@@ -101,4 +103,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media only screen and (max-width: 600px) {
+  #section2 {
+    padding: 40px;
+  }
 }
