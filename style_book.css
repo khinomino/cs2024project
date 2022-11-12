@@ -61,10 +61,12 @@
   margin-left: 50px;
   background-color: #EFE8E1;
   color: #935A49;
+  transition:  all 0.2s ease-in-out;
 }
 .form-button:hover {
   background-color: #935A49;
   color: #EFE8E1;
+  transition:  all 0.2s ease-in-out;
 }
 
 #book-button {

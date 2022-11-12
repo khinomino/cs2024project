@@ -51,8 +51,18 @@
   min-width: 400px;
   margin: auto;
   height: 550px;
-  background-image: url("images/clinic.png"); /* fallback */
+  background-image: url('images/clinic.png');
   background-size: cover;
+  transition:  all 0.3s ease-in-out;
+
+  
+}
+
+
+#section2-left #section2-left-text {
+  /* display: none; */
+  opacity: 0;
+  color: #5C3428;
   transition:  all 0.3s ease-in-out;
 
   padding: 20px;
@@ -61,21 +71,11 @@
   align-items: center;
   text-align: center;
   justify-content: flex-end;
-}
 
-#section2-left:hover {
-  background-image: url("images/clinic.png"); /* fallback */
+  height: 100%;
+  width: 100%;
   background-image:
-  linear-gradient(to bottom, rgba(216, 199, 179, 0) 0%, #D8C7B3 100%),
-    url('images/clinic.png');
-  transition:  all 0.3s ease-in-out;
-
-}
-
-#section2-left #section2-left-text {
-  display: none;
-  color: #5C3428;
-  transition:  all 0.3s ease-in-out;
+  linear-gradient(to bottom, rgba(216, 199, 179, 0) 0%, #D8C7B3 100%);
 
 }
 
@@ -88,7 +88,8 @@
   text-decoration: underline;
 }
 #section2-left:hover #section2-left-text {
-  display: block;
+  /* display: block; */
+  opacity: 1;
   transition:  all 0.3s ease-in-out;
 }
 
@@ -127,10 +128,12 @@
   height: 50px;
   background-color: white;
   color: #935A49;
+  transition:  all 0.2s ease-in-out;
 }
 #member-send:hover {
   background-color: #935A49;
   color: #EFE8E1;
+  transition:  all 0.2s ease-in-out;
 }
 
 /* SECTION 3 */
@@ -289,10 +292,12 @@
   margin-left: 50px;
   background-color: #EFE8E1;
   color: #935A49;
+  transition:  all 0.2s ease-in-out;
 }
 .form-button:hover {
   background-color: #935A49;
   color: #EFE8E1;
+  transition:  all 0.2s ease-in-out;
 }
 
 #book-button {
@@ -300,6 +305,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  transition:  all 0.2s ease-in-out;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
