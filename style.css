@@ -24,9 +24,16 @@ a {
   color: #935A49;
 }
 
+a:link, a:visited {
+  color: #FFD60A;
+   background-color: transparent;
+   text-decoration: none;
+}
+
 a:hover {
-  color: #935A49;
-  text-decoration: underline;
+  color: #787276;
+   background-color: transparent;
+  text-decoration: none;
 }
 
 /* UPDATED HEADER */
