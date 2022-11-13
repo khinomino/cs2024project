@@ -197,6 +197,7 @@
   min-width: 30vw;
   max-width: 450px;
   aspect-ratio: 4/6;
+  object-fit: cover;
   background-color: #EFE8E1;
   margin-bottom: 20px;
 }
